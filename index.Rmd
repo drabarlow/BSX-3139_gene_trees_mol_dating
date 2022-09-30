@@ -1,0 +1,283 @@
+---
+title       : "Gene trees and molecular dating"
+subtitle    : "BSX-3139 Molecular Ecology and Evolution"
+author      : Dr Axel Barlow
+job         : "email: a.barlow.@bangor.ac.uk"
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : zenburn      # {zenburn, tomorrow, solarized-dark, ...}
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {selfcontained, standalone, draft}
+knit        : slidify::knit2slides
+logo        : LA_Full_colour_reversed.svg
+biglogo     : A1_FullColour.svg
+assets      : {assets: ../../assets}
+license     : by-nc-sa
+github:
+  user: drabarlow
+  repo: BSX-3139_gene_trees_mol_dating
+  branch: "gh-pages"
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(RColorBrewer)
+library(knitr)
+```
+
+<!-- adding bold and italic options -->
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+## Gene trees and molecular dating
+
+- What are gene trees?
+- What can they be used for?
+- What shapes the gene tree?
+- Calibrating trees
+
+---
+
+## Gene tree
+
+- Evolutionary history of a genetic locus, represented as a tree
+- (not always an actual gene)
+- Can be used to infer species or population histories*
+- Any recombining genome has multiple loci, each with its own gene tree
+- Easy to calculate using genetic data (often sequences)
+
+---
+
+## Gene tree terminology
+
+```{r, out.width = "90%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/term.png")
+```
+
+--- .segue .dark 
+
+## What can we use gene trees for?
+
+---
+
+## Gene trees in Molecular Ecology
+
+```{r, out.width = "80%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/trees_use.svg")
+```
+
+---
+
+## Grass snakes
+
+```{r, out.width = "70%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/helvetica.JPG")
+```
+
+---
+
+## Grass snakes
+
+```{r, out.width = "100%", out.height=500, dpi = 300, echo = FALSE}
+include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_and_taxonomy_of_grass_snakes_(Natrix_natrix_N._megalocephala).pdf")
+```
+
+---
+
+## Glacial refugia
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/LGM_Europe_Map_v1.png")
+```
+
+--- .segue .dark 
+
+## What shapes the gene tree?
+
+---
+
+## Allele evolution
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/evol_tre.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div1.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div2.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div3.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div4.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div5.svg")
+```
+
+---
+
+## An example
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/div6.svg")
+```
+
+---
+
+## Observations
+
+- Drift sorts the lineages into clades
+- This takes time, we can't detect the divergence immediately
+- We go through stages of complete/incomplete monophyly
+- Mutation builds upon the clades, monophyly is retained [unless there is gene flow]
+- In this example, the phylogeny does not represent the sequence of population splits
+- The phylogenetic divergence times are older than the population splits
+- Each locus goes through its own history of lineage sorting
+- The unpredictability is reduced with smaller population sizes and older splits [more drift]
+- These processes are the same for species-level phylogenies
+
+--- &twocol
+
+## Evidence from whole genome analysis
+
+*** =left
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+  include_graphics("./assets/img/cave_mono.svg")
+```
+
+*Barlow et al. 2018. Nat. Ecol. Evol*
+
+
+*** =right
+
+- Brown bear, polar bear, extinct cave bears
+- Aligned nuclear genomes, divided into 25 kb blocks
+- Only 50 % of blocks show the correct species relationships
+- Rest are a mix of all possible topologies
+
+--- .segue .dark 
+
+## Calibrating trees
+
+--- &vcenter
+
+## Branch length are typically scaled to genetic distance
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left'}
+  include_graphics("./assets/img/brown_undated.svg")
+```
+
+--- &vcenter
+
+## Imagine if they could be scaled to time
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left'}
+  include_graphics("./assets/img/brown_dated.svg")
+```
+
+--- .class bg:white
+
+## Molecular clock hypothesis
+
+- Substitutions seem to occur at an approximately constant rate
+- This means genetic distance is proportional to time
+- Sometimes the relationship breaks down (divergent lineages, saturation, selection)
+- At the population level it generally works well
+
+```{r, out.width = "60%", fig.width = 5, fig.height = 3, dpi = 600, fig.align = "center", echo = FALSE}
+t <- read.table("./assets/data/clock.txt", header=TRUE)
+par(mar=c(4,4,1,1))
+plot(jitter(t$time), jitter(t$div, factor=15), pch=19, col="red", xlab="time (years)", ylab="genetic distance")
+abline(lm(t$div ~ t$time))
+```
+
+--- .class #id
+
+## Methods of calibrating the tree
+
+- If we assume a molecular clock, we can use external sources of information to calibrate the tree
+- **Genetic distance per unit time**
+
+### There are 3 (interdependent) parameters of interest:
+
+- `tip ages`
+- `node ages`
+- `substitution rate`
+
+--- &twocol
+
+## Sabretooth cat genera
+
+- When did they diverge from living cats?
+- How diverged are they from one another?
+
+*** =left
+
+### *Smilodon*
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center'}
+include_graphics("./assets/img/smilodon_skull.jpg")
+```
+
+*** =right
+
+### *Homotherium*
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center'}
+include_graphics("./assets/img/Homotherium_serum.jpg")
+```
+
+*Sergiodlarosa, CC BY-SA 3.0*
+
+---
+
+## Molecular dating of sabretooth cats
+
+```{r, out.width = "85%", dpi = 300, echo = FALSE, fig.align='center'}
+include_graphics("./assets/img/sabre_tree.svg")
+```
+
+
+--- &thankyou
+
+## Next time:
+
+**Ancient DNA 1**
+
+
+

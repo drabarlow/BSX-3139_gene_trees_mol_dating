@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gene trees and molecular dating</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Gene trees and molecular dating">
+  <meta name="author" content="Dr Axel Barlow">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/custom.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/A1_FullColour.svg">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/LA_Full_colour_reversed.svg">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Gene trees and molecular dating</h1>
+    <h2>BSX-3139 Molecular Ecology and Evolution</h2>
+    <p>Dr Axel Barlow<br/>email: a.barlow.@bangor.ac.uk</p>
+  </hgroup>
+  
+    <a href="https://github.com/drabarlow/BSX-3139_gene_trees_mol_dating/zipball/gh-pages" class="example">
+     Download
+    </a>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- adding bold and italic options -->
+
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Gene trees and molecular dating</h2>
+
+<ul>
+<li>What are gene trees?</li>
+<li>What can they be used for?</li>
+<li>What shapes the gene tree?</li>
+<li>Calibrating trees</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  
+  <hgroup>
+    <h2>Gene tree</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Evolutionary history of a genetic locus, represented as a tree</li>
+<li>(not always an actual gene)</li>
+<li>Can be used to infer species or population histories*</li>
+<li>Any recombining genome has multiple loci, each with its own gene tree</li>
+<li>Easy to calculate using genetic data (often sequences)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  
+  <hgroup>
+    <h2>Gene tree terminology</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/term.png" alt="plot of chunk unnamed-chunk-1" width="90%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-4" style="background:;">
+  
+  <hgroup>
+    <h2>What can we use gene trees for?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  
+  <hgroup>
+    <h2>Gene trees in Molecular Ecology</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/trees_use.svg" alt="plot of chunk unnamed-chunk-2" width="80%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  
+  <hgroup>
+    <h2>Grass snakes</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/helvetica.JPG" alt="plot of chunk unnamed-chunk-3" width="70%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>Grass snakes</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/2013-Mitochondrial_phylogeography_contact_zones_and_taxonomy_of_grass_snakes_(Natrix_natrix_N._megalocephala).pdf" title="plot of chunk unnamed-chunk-4" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>Glacial refugia</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/LGM_Europe_Map_v1.png" alt="plot of chunk unnamed-chunk-5" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-9" style="background:;">
+  
+  <hgroup>
+    <h2>What shapes the gene tree?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  
+  <hgroup>
+    <h2>Allele evolution</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/evol_tre.svg" alt="plot of chunk unnamed-chunk-6" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div1.svg" alt="plot of chunk unnamed-chunk-7" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div2.svg" alt="plot of chunk unnamed-chunk-8" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div3.svg" alt="plot of chunk unnamed-chunk-9" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div4.svg" alt="plot of chunk unnamed-chunk-10" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div5.svg" alt="plot of chunk unnamed-chunk-11" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  
+  <hgroup>
+    <h2>An example</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/div6.svg" alt="plot of chunk unnamed-chunk-12" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  
+  <hgroup>
+    <h2>Observations</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Drift sorts the lineages into clades</li>
+<li>This takes time, we can&#39;t detect the divergence immediately</li>
+<li>We go through stages of complete/incomplete monophyly</li>
+<li>Mutation builds upon the clades, monophyly is retained [unless there is gene flow]</li>
+<li>In this example, the phylogeny does not represent the sequence of population splits</li>
+<li>The phylogenetic divergence times are older than the population splits</li>
+<li>Each locus goes through its own history of lineage sorting</li>
+<li>The unpredictability is reduced with smaller population sizes and older splits [more drift]</li>
+<li>These processes are the same for species-level phylogenies</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  
+  <hgroup>
+    <h2>Evidence from whole genome analysis</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/cave_mono.svg" alt="plot of chunk unnamed-chunk-13" width="100%" style="display: block; margin: auto;" /></p>
+
+<p><em>Barlow et al. 2018. Nat. Ecol. Evol</em></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Brown bear, polar bear, extinct cave bears</li>
+<li>Aligned nuclear genomes, divided into 25 kb blocks</li>
+<li>Only 50 % of blocks show the correct species relationships</li>
+<li>Rest are a mix of all possible topologies</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-19" style="background:;">
+  
+  <hgroup>
+    <h2>Calibrating trees</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-20">
+<hgroup>
+  <h2>Branch length are typically scaled to genetic distance</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="./assets/img/brown_undated.svg" alt="plot of chunk unnamed-chunk-14" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+
+</article>
+<!-- Presenter Notes -->
+
+</slide>
+<slide class="" id="slide-21">
+<hgroup>
+  <h2>Imagine if they could be scaled to time</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="./assets/img/brown_dated.svg" alt="plot of chunk unnamed-chunk-15" width="100%" style="display: block; margin: auto auto auto 0;" /></p>
+
+</article>
+<!-- Presenter Notes -->
+
+</slide>
+<slide class="class" id="slide-22" style="background:white;">
+  
+  <hgroup>
+    <h2>Molecular clock hypothesis</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Substitutions seem to occur at an approximately constant rate</li>
+<li>This means genetic distance is proportional to time</li>
+<li>Sometimes the relationship breaks down (divergent lineages, saturation, selection)</li>
+<li>At the population level it generally works well</li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-16-1.png" alt="plot of chunk unnamed-chunk-16" width="60%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  
+  <hgroup>
+    <h2>Methods of calibrating the tree</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>If we assume a molecular clock, we can use external sources of information to calibrate the tree</li>
+<li><strong>Genetic distance per unit time</strong></li>
+</ul>
+
+<h3>There are 3 (interdependent) parameters of interest:</h3>
+
+<ul>
+<li><code>tip ages</code></li>
+<li><code>node ages</code></li>
+<li><code>substitution rate</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  
+  <hgroup>
+    <h2>Sabretooth cat genera</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>When did they diverge from living cats?</li>
+<li>How diverged are they from one another?</li>
+</ul>
+
+<div style='float:left;width:48%;' class='centered'>
+  <h3><em>Smilodon</em></h3>
+
+<p><img src="./assets/img/smilodon_skull.jpg" alt="plot of chunk unnamed-chunk-17" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3><em>Homotherium</em></h3>
+
+<p><img src="./assets/img/Homotherium_serum.jpg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" /></p>
+
+<p><em>Sergiodlarosa, CC BY-SA 3.0</em></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  
+  <hgroup>
+    <h2>Molecular dating of sabretooth cats</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-19" width="85%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="thank-you-slide segue nobackground" id="slide-26">
+  <aside class="gdbar right"><img src="assets/img/LA_Full_colour_reversed.svg"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>Next time:</h2>
+    <p><strong>Ancient DNA 1</strong></p>
+
+  </article>
+
+  <p class="auto-fadein" data-config-contact="">
+    
+  </p>
+</slide>
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Gene tree'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Gene tree terminology'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What can we use gene trees for?'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Gene trees in Molecular Ecology'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Grass snakes'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Grass snakes'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Glacial refugia'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='What shapes the gene tree?'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Allele evolution'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='An example'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='An example'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='An example'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='An example'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='An example'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='An example'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Observations'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Evidence from whole genome analysis'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Calibrating trees'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Branch length are typically scaled to genetic distance'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Imagine if they could be scaled to time'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Molecular clock hypothesis'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Methods of calibrating the tree'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Sabretooth cat genera'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Molecular dating of sabretooth cats'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Next time:'>
+         26
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

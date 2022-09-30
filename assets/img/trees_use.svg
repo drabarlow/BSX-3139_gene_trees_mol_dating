@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="162.20227mm"
+   height="86.249115mm"
+   viewBox="0 0 162.20227 86.249115"
+   version="1.1"
+   id="svg7013"
+   inkscape:version="1.2.1 (0f2f062aeb, 2022-09-21, custom)"
+   sodipodi:docname="trees_use.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7015"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="242.15836"
+     inkscape:cy="141.67946"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs7010">
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="RoundedArrow"
+       markerWidth="6.1347523"
+       markerHeight="5.9304953"
+       viewBox="0 0 6.1347524 5.9304951"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path1367" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8051">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8047" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8049" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8051"
+       id="linearGradient8053"
+       x1="89.730606"
+       y1="90.8134"
+       x2="131.84068"
+       y2="130.17998"
+       gradientUnits="userSpaceOnUse" />
+    <marker
+       style="overflow:visible"
+       id="RoundedArrow-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="RoundedArrow"
+       markerWidth="6.1347523"
+       markerHeight="5.9304953"
+       viewBox="0 0 6.1347524 5.9304951"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="m -0.21114562,-4.1055728 6.42229122,3.21114561 a 1,1 90 0 1 0,1.78885438 L -0.21114562,4.1055728 A 1.236068,1.236068 31.717474 0 1 -2,3 v -6 a 1.236068,1.236068 148.28253 0 1 1.78885438,-1.1055728 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path1367-1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.148799,-74.357213)">
+    <g
+       id="g11438">
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:#000000;fill-opacity:1;stroke:#f500d6;stroke-width:0.35269"
+         x="38.033833"
+         y="107.11704"
+         id="text7188"><tspan
+           sodipodi:role="line"
+           id="tspan7186"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:url(#linearGradient8053);fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="38.033833"
+           y="107.11704">Individual</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:#ff0000;fill-opacity:1;stroke:#f500d6;stroke-width:0.35269"
+         x="95.301697"
+         y="103.91987"
+         id="text7188-0"><tspan
+           sodipodi:role="line"
+           id="tspan7186-62"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="95.301697"
+           y="103.91987">Fst, allele frequencies</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:#ff0000;fill-opacity:1;stroke:#f500d6;stroke-width:0.35269"
+         x="112.09863"
+         y="157.63242"
+         id="text7188-0-7"><tspan
+           sodipodi:role="line"
+           id="tspan7186-62-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="112.09863"
+           y="157.63242">Tree based methods</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:#ff0000;fill-opacity:1;stroke:#f500d6;stroke-width:0.35269"
+         x="119.64878"
+         y="129.79771"
+         id="text7188-0-2"><tspan
+           sodipodi:role="line"
+           id="tspan7186-62-0"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#010000;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="119.64878"
+           y="129.79771">Phylogeography</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:#000000;fill-opacity:1;stroke:#f500d6;stroke-width:0.35269"
+         x="29.603678"
+         y="90.808975"
+         id="text7188-9"><tspan
+           sodipodi:role="line"
+           id="tspan7186-1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:url(#linearGradient8053);fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="29.603678"
+           y="90.808975">DIVERGENCE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:none;stroke:#f500d6;stroke-width:0.35269"
+         x="25.307642"
+         y="123.42511"
+         id="text7188-3"><tspan
+           sodipodi:role="line"
+           id="tspan7186-6"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="25.307642"
+           y="123.42511">Population recent</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:none;stroke:#f500d6;stroke-width:0.35269"
+         x="23.736677"
+         y="139.73318"
+         id="text7188-7"><tspan
+           sodipodi:role="line"
+           id="tspan7186-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="23.736677"
+           y="139.73318">Population ancient</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.05556px;fill:none;stroke:#f500d6;stroke-width:0.35269"
+         x="40.4454"
+         y="156.04124"
+         id="text7188-7-3"><tspan
+           sodipodi:role="line"
+           id="tspan7186-5-5"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35269;stroke-opacity:1"
+           x="40.4454"
+           y="156.04124">Species</tspan></text>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.54656;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow)"
+         d="m 91.953268,99.322768 -0.0299,29.956302"
+         id="path8163" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.54656;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#RoundedArrow-6)"
+         d="m 109.26834,158.08855 0.0299,-29.9563"
+         id="path8163-8" />
+    </g>
+  </g>
+</svg>
