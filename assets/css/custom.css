@@ -1,3 +1,6 @@
+/* getting the fonts correctly for gh pages */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Source+Code+Pro:500|Open+Sans|Oswald);
+
 .title-slide {
   background-color: #FFFFFF;
   /* background-color: #CBE7A5; #EDE0CF; ; #CA9F9D*/
