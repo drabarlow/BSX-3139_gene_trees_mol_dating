@@ -196,9 +196,18 @@ strong {
 
 ### There are 3 (interdependent) parameters of interest:
 
-- `tip ages`
-- `node ages`
-- `substitution rate`
+- **Tip ages**: sampling dates, radiocarbon ages, or unknown
+- **Node ages**: population divergence times, fossils, or unknown
+- **Substitution rate**: previous estimates, related species, or unknown
+
+--- .class #id
+
+## Brown bears
+
+- Radiocarbon dates, estimate substitution rate, coalescence times, and an unknown age
+
+<img src="./assets/img/S6_estimation_new_MCC.tre.svg" alt="plot of chunk unnamed-chunk-17" width="65%" style="display: block; margin: auto;" />
+
 
 --- &twocol
 
@@ -211,13 +220,13 @@ strong {
 
 ### *Smilodon*
 
-<img src="./assets/img/smilodon_skull.jpg" alt="plot of chunk unnamed-chunk-17" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/smilodon_skull.jpg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" />
 
 *** =right
 
 ### *Homotherium*
 
-<img src="./assets/img/Homotherium_serum.jpg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/Homotherium_serum.jpg" alt="plot of chunk unnamed-chunk-19" width="100%" style="display: block; margin: auto;" />
 
 *Sergiodlarosa, CC BY-SA 3.0*
 
@@ -225,13 +234,13 @@ strong {
 
 ## Molecular dating of sabretooth cats
 
-<img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-19" width="85%" style="display: block; margin: auto;" />
+<img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-20" width="85%" style="display: block; margin: auto;" />
 
 ---
 
 ## Molecular dating of sabretooth cats
 
-<embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" title="plot of chunk unnamed-chunk-20" width="100%" height="500" type="application/pdf" />
+<embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" title="plot of chunk unnamed-chunk-21" width="100%" height="500" type="application/pdf" />
 
 --- &thankyou
 

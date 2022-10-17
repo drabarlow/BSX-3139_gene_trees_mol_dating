@@ -235,9 +235,20 @@ abline(lm(t$div ~ t$time))
 
 ### There are 3 (interdependent) parameters of interest:
 
-- `tip ages`
-- `node ages`
-- `substitution rate`
+- **Tip ages**: sampling dates, radiocarbon ages, or unknown
+- **Node ages**: population divergence times, fossils, or unknown
+- **Substitution rate**: previous estimates, related species, or unknown
+
+--- .class #id
+
+## Brown bears
+
+- Radiocarbon dates, estimate substitution rate, coalescence times, and an unknown age
+
+```{r, out.width = "65%", dpi = 300, echo = FALSE, fig.align='center'}
+  include_graphics("./assets/img/S6_estimation_new_MCC.tre.svg")
+```
+
 
 --- &twocol
 
