@@ -272,6 +272,13 @@ include_graphics("./assets/img/Homotherium_serum.jpg")
 include_graphics("./assets/img/sabre_tree.svg")
 ```
 
+---
+
+## Molecular dating of sabretooth cats
+
+```{r, out.width = "100%", out.height=500, dpi = 300, echo = FALSE}
+include_graphics("./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf")
+```
 
 --- &thankyou
 

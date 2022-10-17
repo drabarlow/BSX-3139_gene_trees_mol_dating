@@ -227,6 +227,11 @@ strong {
 
 <img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-19" width="85%" style="display: block; margin: auto;" />
 
+---
+
+## Molecular dating of sabretooth cats
+
+<embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" title="plot of chunk unnamed-chunk-20" width="100%" height="500" type="application/pdf" />
 
 --- &thankyou
 
