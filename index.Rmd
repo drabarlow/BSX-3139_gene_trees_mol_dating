@@ -182,13 +182,22 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 *Barlow et al. 2018. Nat. Ecol. Evol*
 
-
 *** =right
 
 - Brown bear, polar bear, extinct cave bears
 - Aligned nuclear genomes, divided into 25 kb blocks
 - Only 50 % of blocks show the correct species relationships
 - Rest are a mix of all possible topologies
+
+---
+
+## Gene trees summary
+
+- Can identify population divergence/speciation events
+- And the relationships between these populations/species
+- Issues of lineage sorting effects
+- Accuracy improves with old events involving small popualtions (more drift)
+- Generally we look at several gene trees for a better overview
 
 --- .segue .dark 
 
@@ -239,13 +248,58 @@ abline(lm(t$div ~ t$time))
 - **Node ages**: population divergence times, fossils, or unknown
 - **Substitution rate**: previous estimates, related species, or unknown
 
+--- bg:white
+
+## Calibration priors
+
+- Frequently Bayesian analyses are used for molecular dating are used 
+- Allows calibration to be input as a distribution, incorporating the uncertainty
+- The age distribution of unknown tips/node/sub rates can also be estimated
+
+```{r, out.width = "70%", fig.width = 5, fig.height = 3, dpi = 600, fig.align = "center", echo = FALSE, fig.cap=""}
+hist(rlnorm(10000, log(10), log(2)), breaks=100, 
+     xlim=c(-10,100), axes=FALSE,
+     xlab="million years", ylab="probability", col="lightblue",
+     main="Fossil 12 Ma, fossil record good"
+)
+axis(1, at=c(-10, 40, 90), labels=c(0,50,100))
+axis(2, labels=FALSE)
+```
+
+--- &twocol
+
+## Calibration priors
+
+*** =left
+
+```{r, out.width = "100%", fig.width = 5, fig.height = 5, dpi = 600, fig.align = "center", echo = FALSE, fig.cap=""}
+hist(rnorm(10000, 30, 0.5), breaks=100, axes=FALSE,
+     xlab="thousand years", ylab="probability", col="lightblue",
+     main="Radiocarbon date with uncertainty"
+)
+axis(1)
+axis(2, labels=FALSE)
+```
+
+*** =right
+
+```{r, out.width = "100%", fig.width = 5, fig.height = 5, dpi = 600, fig.align = "center", echo = FALSE, fig.cap=""}
+hist(runif(10000, min = 10, max = 100), breaks=50, axes=FALSE,
+     xlab="million years", ylab="probability", col="lightblue", xlim=c(0,120),
+     main="Fossil 10 Ma, poor fossil record"
+)
+axis(1)
+axis(2, labels=FALSE)
+```
+
+
 --- .class #id
 
 ## Brown bears
 
 - Radiocarbon dates, estimate substitution rate, coalescence times, and an unknown age
 
-```{r, out.width = "65%", dpi = 300, echo = FALSE, fig.align='center'}
+```{r, out.width = "65%", dpi = 300, echo = FALSE, fig.align='center', fig.cap=""}
   include_graphics("./assets/img/S6_estimation_new_MCC.tre.svg")
 ```
 
@@ -261,7 +315,7 @@ abline(lm(t$div ~ t$time))
 
 ### *Smilodon*
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center'}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center', fig.cap=""}
 include_graphics("./assets/img/smilodon_skull.jpg")
 ```
 
@@ -269,7 +323,7 @@ include_graphics("./assets/img/smilodon_skull.jpg")
 
 ### *Homotherium*
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center'}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='center', fig.cap=""}
 include_graphics("./assets/img/Homotherium_serum.jpg")
 ```
 
@@ -277,9 +331,24 @@ include_graphics("./assets/img/Homotherium_serum.jpg")
 
 ---
 
+## Uniform calibration priors
+Fossil|Fossil Constraint|Calibration Prior
+---|---|---
+Genetta fossil: 11.2 Ma|minimum 11.2 Ma|uniform: 50–11.2 Ma
+Hyaenid fossil: 16.4 Ma|minimum 16.4 Ma|uniform: 50–16.4 Ma
+Herpestid fossil: 16.4 Ma|minimum 16.4 Ma|uniform: 50–16.4 Ma
+Felidae stem fossils, Prionodon fossils|minimum 28 Ma|uniform: 50–28 Ma
+Lynx fossil: 5.3 Ma|minimum 5.3 Ma|uniform: 10–5.3 Ma
+Acinonyx fossils: 3.8 Ma|minimum 3.8 Ma|uniform: 10–3.8 Ma
+Caracal and serval fossils: 3.8 Ma|minimum 3.8 Ma|uniform: 16–3.8 Ma
+Oldest Panthera fossil: 3.8 Ma|minimum 3.8 Ma|uniform: 16–3.8 Ma
+Oldest Panthera tigris fossil: 1.5 Ma|minimum 1.5 Ma|uniform: 10–1.5 Ma
+
+---
+
 ## Molecular dating of sabretooth cats
 
-```{r, out.width = "85%", dpi = 300, echo = FALSE, fig.align='center'}
+```{r, out.width = "85%", dpi = 300, echo = FALSE, fig.align='center', fig.cap=""}
 include_graphics("./assets/img/sabre_tree.svg")
 ```
 
@@ -287,7 +356,7 @@ include_graphics("./assets/img/sabre_tree.svg")
 
 ## Molecular dating of sabretooth cats
 
-```{r, out.width = "100%", out.height=500, dpi = 300, echo = FALSE}
+```{r, out.width = "100%", out.height=500, dpi = 300, echo = FALSE, fig.cap=""}
 include_graphics("./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf")
 ```
 

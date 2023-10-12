@@ -152,13 +152,22 @@ strong {
 
 *Barlow et al. 2018. Nat. Ecol. Evol*
 
-
 *** =right
 
 - Brown bear, polar bear, extinct cave bears
 - Aligned nuclear genomes, divided into 25 kb blocks
 - Only 50 % of blocks show the correct species relationships
 - Rest are a mix of all possible topologies
+
+---
+
+## Gene trees summary
+
+- Can identify population divergence/speciation events
+- And the relationships between these populations/species
+- Issues of lineage sorting effects
+- Accuracy improves with old events involving small popualtions (more drift)
+- Generally we look at several gene trees for a better overview
 
 --- .segue .dark 
 
@@ -200,13 +209,36 @@ strong {
 - **Node ages**: population divergence times, fossils, or unknown
 - **Substitution rate**: previous estimates, related species, or unknown
 
+--- bg:white
+
+## Calibration priors
+
+- Frequently Bayesian analyses are used for molecular dating are used 
+- Allows calibration to be input as a distribution, incorporating the uncertainty
+- The age distribution of unknown tips/node/sub rates can also be estimated
+
+<img src="assets/fig/unnamed-chunk-17-1.png" width="70%" style="display: block; margin: auto;" />
+
+--- &twocol
+
+## Calibration priors
+
+*** =left
+
+<img src="assets/fig/unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" />
+
+*** =right
+
+<img src="assets/fig/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" />
+
+
 --- .class #id
 
 ## Brown bears
 
 - Radiocarbon dates, estimate substitution rate, coalescence times, and an unknown age
 
-<img src="./assets/img/S6_estimation_new_MCC.tre.svg" alt="plot of chunk unnamed-chunk-17" width="65%" style="display: block; margin: auto;" />
+<img src="./assets/img/S6_estimation_new_MCC.tre.svg" width="65%" style="display: block; margin: auto;" />
 
 
 --- &twocol
@@ -220,27 +252,42 @@ strong {
 
 ### *Smilodon*
 
-<img src="./assets/img/smilodon_skull.jpg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/smilodon_skull.jpg" width="100%" style="display: block; margin: auto;" />
 
 *** =right
 
 ### *Homotherium*
 
-<img src="./assets/img/Homotherium_serum.jpg" alt="plot of chunk unnamed-chunk-19" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/Homotherium_serum.jpg" width="100%" style="display: block; margin: auto;" />
 
 *Sergiodlarosa, CC BY-SA 3.0*
 
 ---
 
-## Molecular dating of sabretooth cats
-
-<img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-20" width="85%" style="display: block; margin: auto;" />
+## Uniform calibration priors
+Fossil|Fossil Constraint|Calibration Prior
+---|---|---
+Genetta fossil: 11.2 Ma|minimum 11.2 Ma|uniform: 50–11.2 Ma
+Hyaenid fossil: 16.4 Ma|minimum 16.4 Ma|uniform: 50–16.4 Ma
+Herpestid fossil: 16.4 Ma|minimum 16.4 Ma|uniform: 50–16.4 Ma
+Felidae stem fossils, Prionodon fossils|minimum 28 Ma|uniform: 50–28 Ma
+Lynx fossil: 5.3 Ma|minimum 5.3 Ma|uniform: 10–5.3 Ma
+Acinonyx fossils: 3.8 Ma|minimum 3.8 Ma|uniform: 10–3.8 Ma
+Caracal and serval fossils: 3.8 Ma|minimum 3.8 Ma|uniform: 16–3.8 Ma
+Oldest Panthera fossil: 3.8 Ma|minimum 3.8 Ma|uniform: 16–3.8 Ma
+Oldest Panthera tigris fossil: 1.5 Ma|minimum 1.5 Ma|uniform: 10–1.5 Ma
 
 ---
 
 ## Molecular dating of sabretooth cats
 
-<embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" title="plot of chunk unnamed-chunk-21" width="100%" height="500" type="application/pdf" />
+<img src="./assets/img/sabre_tree.svg" width="85%" style="display: block; margin: auto;" />
+
+---
+
+## Molecular dating of sabretooth cats
+
+<embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" width="100%" height="500" type="application/pdf" />
 
 --- &thankyou
 

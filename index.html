@@ -361,7 +361,27 @@ strong {
   
 </slide>
 
-<slide class="segue dark" id="slide-19" style="background:;">
+<slide class="" id="slide-19" style="background:;">
+  
+  <hgroup>
+    <h2>Gene trees summary</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Can identify population divergence/speciation events</li>
+<li>And the relationships between these populations/species</li>
+<li>Issues of lineage sorting effects</li>
+<li>Accuracy improves with old events involving small popualtions (more drift)</li>
+<li>Generally we look at several gene trees for a better overview</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-20" style="background:;">
   
   <hgroup>
     <h2>Calibrating trees</h2>
@@ -374,7 +394,7 @@ strong {
   
 </slide>
 
-<slide class="" id="slide-20">
+<slide class="" id="slide-21">
 <hgroup>
   <h2>Branch length are typically scaled to genetic distance</h2>
 </hgroup>
@@ -385,7 +405,7 @@ strong {
 <!-- Presenter Notes -->
 
 </slide>
-<slide class="" id="slide-21">
+<slide class="" id="slide-22">
 <hgroup>
   <h2>Imagine if they could be scaled to time</h2>
 </hgroup>
@@ -396,7 +416,7 @@ strong {
 <!-- Presenter Notes -->
 
 </slide>
-<slide class="class" id="slide-22" style="background:white;">
+<slide class="class" id="slide-23" style="background:white;">
   
   <hgroup>
     <h2>Molecular clock hypothesis</h2>
@@ -442,6 +462,47 @@ strong {
   
 </slide>
 
+<slide class="" id="slide-25" style="background:white;">
+  
+  <hgroup>
+    <h2>Calibration priors</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Frequently Bayesian analyses are used for molecular dating are used </li>
+<li>Allows calibration to be input as a distribution, incorporating the uncertainty</li>
+<li>The age distribution of unknown tips/node/sub rates can also be estimated</li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-17-1.png" width="70%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  
+  <hgroup>
+    <h2>Calibration priors</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="assets/fig/unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
 <slide class="class" id="id" style="background:;">
   
   <hgroup>
@@ -453,14 +514,14 @@ strong {
 <li>Radiocarbon dates, estimate substitution rate, coalescence times, and an unknown age</li>
 </ul>
 
-<p><img src="./assets/img/S6_estimation_new_MCC.tre.svg" alt="plot of chunk unnamed-chunk-17" width="65%" style="display: block; margin: auto;" /></p>
+<p><img src="./assets/img/S6_estimation_new_MCC.tre.svg" width="65%" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
   
 </slide>
 
-<slide class="" id="slide-25" style="background:;">
+<slide class="" id="slide-28" style="background:;">
   
   <hgroup>
     <h2>Sabretooth cat genera</h2>
@@ -475,13 +536,13 @@ strong {
 <div style='float:left;width:48%;' class='centered'>
   <h3><em>Smilodon</em></h3>
 
-<p><img src="./assets/img/smilodon_skull.jpg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="./assets/img/smilodon_skull.jpg" width="100%" style="display: block; margin: auto;" /></p>
 
 </div>
 <div style='float:right;width:48%;'>
   <h3><em>Homotherium</em></h3>
 
-<p><img src="./assets/img/Homotherium_serum.jpg" alt="plot of chunk unnamed-chunk-19" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="./assets/img/Homotherium_serum.jpg" width="100%" style="display: block; margin: auto;" /></p>
 
 <p><em>Sergiodlarosa, CC BY-SA 3.0</em></p>
 
@@ -491,35 +552,101 @@ strong {
   
 </slide>
 
-<slide class="" id="slide-26" style="background:;">
+<slide class="" id="slide-29" style="background:;">
   
   <hgroup>
-    <h2>Molecular dating of sabretooth cats</h2>
+    <h2>Uniform calibration priors</h2>
   </hgroup>
   
   <article data-timings="">
-    <p><img src="./assets/img/sabre_tree.svg" alt="plot of chunk unnamed-chunk-20" width="85%" style="display: block; margin: auto;" /></p>
+    <table><thead>
+<tr>
+<th>Fossil</th>
+<th>Fossil Constraint</th>
+<th>Calibration Prior</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Genetta fossil: 11.2 Ma</td>
+<td>minimum 11.2 Ma</td>
+<td>uniform: 50–11.2 Ma</td>
+</tr>
+<tr>
+<td>Hyaenid fossil: 16.4 Ma</td>
+<td>minimum 16.4 Ma</td>
+<td>uniform: 50–16.4 Ma</td>
+</tr>
+<tr>
+<td>Herpestid fossil: 16.4 Ma</td>
+<td>minimum 16.4 Ma</td>
+<td>uniform: 50–16.4 Ma</td>
+</tr>
+<tr>
+<td>Felidae stem fossils, Prionodon fossils</td>
+<td>minimum 28 Ma</td>
+<td>uniform: 50–28 Ma</td>
+</tr>
+<tr>
+<td>Lynx fossil: 5.3 Ma</td>
+<td>minimum 5.3 Ma</td>
+<td>uniform: 10–5.3 Ma</td>
+</tr>
+<tr>
+<td>Acinonyx fossils: 3.8 Ma</td>
+<td>minimum 3.8 Ma</td>
+<td>uniform: 10–3.8 Ma</td>
+</tr>
+<tr>
+<td>Caracal and serval fossils: 3.8 Ma</td>
+<td>minimum 3.8 Ma</td>
+<td>uniform: 16–3.8 Ma</td>
+</tr>
+<tr>
+<td>Oldest Panthera fossil: 3.8 Ma</td>
+<td>minimum 3.8 Ma</td>
+<td>uniform: 16–3.8 Ma</td>
+</tr>
+<tr>
+<td>Oldest Panthera tigris fossil: 1.5 Ma</td>
+<td>minimum 1.5 Ma</td>
+<td>uniform: 10–1.5 Ma</td>
+</tr>
+</tbody></table>
 
   </article>
   <!-- Presenter Notes -->
   
 </slide>
 
-<slide class="" id="slide-27" style="background:;">
+<slide class="" id="slide-30" style="background:;">
   
   <hgroup>
     <h2>Molecular dating of sabretooth cats</h2>
   </hgroup>
   
   <article data-timings="">
-    <p><embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" title="plot of chunk unnamed-chunk-21" width="100%" height="500" type="application/pdf" /></p>
+    <p><img src="./assets/img/sabre_tree.svg" width="85%" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
   
 </slide>
 
-<slide class="thank-you-slide segue nobackground" id="slide-28">
+<slide class="" id="slide-31" style="background:;">
+  
+  <hgroup>
+    <h2>Molecular dating of sabretooth cats</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/Paijmans et al. - 2017 - Evolutionary History of Saber-Toothed Cats Based o.pdf" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="thank-you-slide segue nobackground" id="slide-32">
   <aside class="gdbar right"><img src="assets/img/LA_Full_colour_reversed.svg"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>Next time:</h2>
@@ -664,71 +791,99 @@ strong {
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='Calibrating trees'>
+        data-slide=19 title='Gene trees summary'>
          19
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Branch length are typically scaled to genetic distance'>
+        data-slide=20 title='Calibrating trees'>
          20
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='Imagine if they could be scaled to time'>
+        data-slide=21 title='Branch length are typically scaled to genetic distance'>
          21
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Molecular clock hypothesis'>
+        data-slide=22 title='Imagine if they could be scaled to time'>
          22
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Methods of calibrating the tree'>
+        data-slide=23 title='Molecular clock hypothesis'>
          23
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Brown bears'>
+        data-slide=24 title='Methods of calibrating the tree'>
          24
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Sabretooth cat genera'>
+        data-slide=25 title='Calibration priors'>
          25
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=26 title='Molecular dating of sabretooth cats'>
+        data-slide=26 title='Calibration priors'>
          26
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Molecular dating of sabretooth cats'>
+        data-slide=27 title='Brown bears'>
          27
       </a>
     </li>
     
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Next time:'>
+        data-slide=28 title='Sabretooth cat genera'>
          28
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Uniform calibration priors'>
+         29
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Molecular dating of sabretooth cats'>
+         30
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Molecular dating of sabretooth cats'>
+         31
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Next time:'>
+         32
       </a>
     </li>
     
