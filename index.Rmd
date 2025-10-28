@@ -102,17 +102,9 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ---
 
-## Allele evolution
-
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
-  include_graphics("./assets/img/evol_tre.svg")
-```
-
----
-
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div1.svg")
 ```
 
@@ -120,7 +112,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div2.svg")
 ```
 
@@ -128,7 +120,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div3.svg")
 ```
 
@@ -136,7 +128,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div4.svg")
 ```
 
@@ -144,7 +136,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div5.svg")
 ```
 
@@ -152,7 +144,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## An example
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/div6.svg")
 ```
 
@@ -176,7 +168,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 *** =left
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center"}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "center", fig.cap=""}
   include_graphics("./assets/img/cave_mono.svg")
 ```
 
@@ -196,8 +188,33 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 - Can identify population divergence/speciation events
 - And the relationships between these populations/species
 - Issues of lineage sorting effects
-- Accuracy improves with old events involving small popualtions (more drift)
-- Generally we look at several gene trees for a better overview
+- Accuracy improves with old events involving small populations (more drift)
+- Generally we look at many  gene trees for a better overview
+
+---
+
+## Multilocus phylogenetics
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "left", fig.cap=""}
+  include_graphics("./assets/img/leopar_res.svg")
+```
+
+---
+
+## Multilocus phylogenetics
+
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align = "left", fig.cap=""}
+  include_graphics("./assets/img/hairball.svg")
+```
+
+---
+
+## Multilocus phylogenetics
+
+```{r, out.width = "100%", out.height=500, dpi = 300, echo = FALSE, fig.cap=""}
+include_graphics("./assets/img/Paijmans et al. - 2021 - African and Asian leopards are highly differentiated at the genomic level.pdf")
+```
+
 
 --- .segue .dark 
 
@@ -207,7 +224,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## Branch length are typically scaled to genetic distance
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left'}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left', fig.cap=""}
   include_graphics("./assets/img/brown_undated.svg")
 ```
 
@@ -215,7 +232,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 
 ## Imagine if they could be scaled to time
 
-```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left'}
+```{r, out.width = "100%", dpi = 300, echo = FALSE, fig.align='left', fig.cap=""}
   include_graphics("./assets/img/brown_dated.svg")
 ```
 
@@ -228,7 +245,7 @@ include_graphics("./assets/img/2013-Mitochondrial_phylogeography_contact_zones_a
 - Sometimes the relationship breaks down (divergent lineages, saturation, selection)
 - At the population level it generally works well
 
-```{r, out.width = "60%", fig.width = 5, fig.height = 3, dpi = 600, fig.align = "center", echo = FALSE}
+```{r, out.width = "60%", fig.width = 5, fig.height = 3, dpi = 600, fig.align = "center", echo = FALSE, fig.cap=""}
 t <- read.table("./assets/data/clock.txt", header=TRUE)
 par(mar=c(4,4,1,1))
 plot(jitter(t$time), jitter(t$div, factor=15), pch=19, col="red", xlab="time (years)", ylab="genetic distance")
@@ -244,9 +261,10 @@ abline(lm(t$div ~ t$time))
 
 ### There are 3 (interdependent) parameters of interest:
 
-- **Tip ages**: sampling dates, radiocarbon ages, or unknown
 - **Node ages**: population divergence times, fossils, or unknown
 - **Substitution rate**: previous estimates, related species, or unknown
+- **Tip ages**: sampling dates, radiocarbon ages, or unknown
+
 
 --- bg:white
 

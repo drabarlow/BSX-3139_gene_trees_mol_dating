@@ -88,45 +88,39 @@ strong {
 
 ---
 
-## Allele evolution
+## An example
 
-<img src="./assets/img/evol_tre.svg" alt="plot of chunk unnamed-chunk-6" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div1.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
 ## An example
 
-<img src="./assets/img/div1.svg" alt="plot of chunk unnamed-chunk-7" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div2.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
 ## An example
 
-<img src="./assets/img/div2.svg" alt="plot of chunk unnamed-chunk-8" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div3.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
 ## An example
 
-<img src="./assets/img/div3.svg" alt="plot of chunk unnamed-chunk-9" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div4.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
 ## An example
 
-<img src="./assets/img/div4.svg" alt="plot of chunk unnamed-chunk-10" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div5.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
 ## An example
 
-<img src="./assets/img/div5.svg" alt="plot of chunk unnamed-chunk-11" width="100%" style="display: block; margin: auto;" />
-
----
-
-## An example
-
-<img src="./assets/img/div6.svg" alt="plot of chunk unnamed-chunk-12" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/div6.svg" width="100%" style="display: block; margin: auto;" />
 
 ---
 
@@ -148,7 +142,7 @@ strong {
 
 *** =left
 
-<img src="./assets/img/cave_mono.svg" alt="plot of chunk unnamed-chunk-13" width="100%" style="display: block; margin: auto;" />
+<img src="./assets/img/cave_mono.svg" width="100%" style="display: block; margin: auto;" />
 
 *Barlow et al. 2018. Nat. Ecol. Evol*
 
@@ -166,8 +160,27 @@ strong {
 - Can identify population divergence/speciation events
 - And the relationships between these populations/species
 - Issues of lineage sorting effects
-- Accuracy improves with old events involving small popualtions (more drift)
-- Generally we look at several gene trees for a better overview
+- Accuracy improves with old events involving small populations (more drift)
+- Generally we look at many  gene trees for a better overview
+
+---
+
+## Multilocus phylogenetics
+
+<img src="./assets/img/leopar_res.svg" width="100%" style="display: block; margin: auto auto auto 0;" />
+
+---
+
+## Multilocus phylogenetics
+
+<img src="./assets/img/hairball.svg" width="100%" style="display: block; margin: auto auto auto 0;" />
+
+---
+
+## Multilocus phylogenetics
+
+<embed src="./assets/img/Paijmans et al. - 2021 - African and Asian leopards are highly differentiated at the genomic level.pdf" width="100%" height="500" type="application/pdf" />
+
 
 --- .segue .dark 
 
@@ -177,13 +190,13 @@ strong {
 
 ## Branch length are typically scaled to genetic distance
 
-<img src="./assets/img/brown_undated.svg" alt="plot of chunk unnamed-chunk-14" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="./assets/img/brown_undated.svg" width="100%" style="display: block; margin: auto auto auto 0;" />
 
 --- &vcenter
 
 ## Imagine if they could be scaled to time
 
-<img src="./assets/img/brown_dated.svg" alt="plot of chunk unnamed-chunk-15" width="100%" style="display: block; margin: auto auto auto 0;" />
+<img src="./assets/img/brown_dated.svg" width="100%" style="display: block; margin: auto auto auto 0;" />
 
 --- .class bg:white
 
@@ -194,7 +207,7 @@ strong {
 - Sometimes the relationship breaks down (divergent lineages, saturation, selection)
 - At the population level it generally works well
 
-<img src="assets/fig/unnamed-chunk-16-1.png" alt="plot of chunk unnamed-chunk-16" width="60%" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-18-1.png" width="60%" style="display: block; margin: auto;" />
 
 --- .class #id
 
@@ -205,9 +218,10 @@ strong {
 
 ### There are 3 (interdependent) parameters of interest:
 
-- **Tip ages**: sampling dates, radiocarbon ages, or unknown
 - **Node ages**: population divergence times, fossils, or unknown
 - **Substitution rate**: previous estimates, related species, or unknown
+- **Tip ages**: sampling dates, radiocarbon ages, or unknown
+
 
 --- bg:white
 
@@ -217,7 +231,7 @@ strong {
 - Allows calibration to be input as a distribution, incorporating the uncertainty
 - The age distribution of unknown tips/node/sub rates can also be estimated
 
-<img src="assets/fig/unnamed-chunk-17-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-19-1.png" width="70%" style="display: block; margin: auto;" />
 
 --- &twocol
 
@@ -225,11 +239,11 @@ strong {
 
 *** =left
 
-<img src="assets/fig/unnamed-chunk-18-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" />
 
 *** =right
 
-<img src="assets/fig/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" />
 
 
 --- .class #id
